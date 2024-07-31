@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Unidad 4</title>
+</head>
+<body>
+    <h1>Registrar Usuario</h1> <!--Titulo del Ejemplo-->
+    <br /> <!--Fuerzo Salto de Lineas en este caso 2 saltos-->
+    <br />
+    <form method="post" action="backend/form.php" enctype="multipart/form-data"> <!--GET:se usa en informacion no sensible y POST:datos sensibles, login, etc-->
+        <label for="username"> <b>Nombre de Usuario:</b></label> <!--Caja de usuarios-->
+        <input type="text" name="username" id="username" placeholder="Por Ejemplo: joserando" /> <!-- type:pasword, text, date, email,file,time --> 
+        <br /> 
+        <br />
+        <label for="username"><b>E-mail:</b> </label>
+        <input type="email" name="E-mail" id="email" placeholder="Ej: jose_rando@yahoo.com.ar" />
+        <br />
+        <br />
+        <label for="clave"><b>Contraseña:</b> </label> 
+        <input type="password" name="clave" id="clave" />
+        <br />
+        <br />
+        <label for="rp"> <b>Repite Contraseña:</b> </label>
+        <input type="password" name="rpcont" id="rpc" />
+        <br />
+        <br />
+        <label for="fn"> <b>Fecha de Nacimiento:</b> </label>
+        <input type="date" name="date" id="dia" /> 
+        <br />
+        <br />
+        <label for="coment"> <b>Cuenta algo sobre Ti:</b></label> <!--hace que el cuadro empiece donde termina la frase-->
+        <textarea name="Comentario" cols="30" rows="10" minlength="10" maxlength="500" placeholder="Escribe Aqui tu Comentario...." required ></textarea>
+        <br />
+        <br />
+        <label for="conocimiento"> <b>Como nos conociste:</b></label>
+          <select name="Como nos conociste">
+            <option value="go">Google </option>
+            <option value="bo">Boca a boca</option>
+            <option value="ce">celular</option>
+            <option value="da">datas</option>
+
+          </select>
+        <br />
+        <br />
+          <input type="submit" value="Registrarme">
+    </form>
+</body>
+</html>
